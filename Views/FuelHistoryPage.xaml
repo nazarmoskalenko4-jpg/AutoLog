@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:views="clr-namespace:AutoLog.Views"
+                xmlns:viewModels="clr-namespace:AutoLog.ViewModels"
+                xmlns:converters="clr-namespace:AutoLog.Converters"
+                x:Class="AutoLog.Views.FuelHistoryPage"
+                Title="Сервісний журнал та поради"
+                BackgroundColor="#1E2433">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:NotNullToBoolConverter x:Key="NotNullToBoolConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="Auto, Auto, *" Padding="28,22" MaximumWidthRequest="920" HorizontalOptions="Fill">
+
+        <!-- РЯДОК 0: Кнопка Назад + Заголовок авто + Кнопка Додати заправку -->
+        <Grid Grid.Row="0" ColumnDefinitions="Auto, *, Auto" ColumnSpacing="16" Margin="0,0,0,20" VerticalOptions="Center">
+            <Button Grid.Column="0"
+                    Text="‹  До автопарку"
+                    Clicked="OnBackClicked"
+                    BackgroundColor="#283147"
+                    TextColor="#E2E8F0"
+                    BorderColor="#3B4764"
+                    BorderWidth="1"
+                    FontAttributes="Bold"
+                    FontSize="13"
+                    HeightRequest="44"
+                    Padding="18,0"
+                    CornerRadius="12" />
+
+            <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                <HorizontalStackLayout Spacing="8">
+                    <Label Text="{Binding Vehicle.Make}" FontSize="22" FontAttributes="Bold" TextColor="#F8FAFC" />
+                    <Label Text="{Binding Vehicle.Model}" FontSize="22" TextColor="#93C5FD" />
+                </HorizontalStackLayout>
+                <Label Text="Сервісний журнал заправок, розрахунок витрати та рекомендації" FontSize="12" TextColor="#94A3B8" />
+            </VerticalStackLayout>
+
+            <Button Grid.Column="2"
+                    Text="＋  Додати заправку / зарядку"
+                    Command="{Binding AddRecordCommand}"
+                    BackgroundColor="#3B82F6"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="13"
+                    HeightRequest="44"
+                    Padding="20,0"
+                    CornerRadius="12" />
+        </Grid>
+
+        <!-- РЯДОК 1: БЛОК ЕКСПЕРТНОЇ СИСТЕМИ В СУЧАСНОМУ ТЕМНО-СЛАНЦЕВОМУ СТИЛІ -->
+        <Border Grid.Row="1" BackgroundColor="#252E42" Stroke="#3B82F6" StrokeThickness="1" Padding="20,16" Margin="0,0,0,20">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="16" />
+            </Border.StrokeShape>
+            <VerticalStackLayout Spacing="10">
+                <HorizontalStackLayout Spacing="10" VerticalOptions="Center">
+                    <Border BackgroundColor="#1D4ED8" WidthRequest="28" HeightRequest="28" StrokeThickness="0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="8" />
+                        </Border.StrokeShape>
+                        <Label Text="✦" FontSize="14" TextColor="#93C5FD" HorizontalOptions="Center" VerticalOptions="Center" />
+                    </Border>
+                    <Label Text="РЕКОМЕНДАЦІЇ ЕКСПЕРТНОЇ СИСТЕМИ ДЛЯ ДВИГУНА" FontSize="12" FontAttributes="Bold" TextColor="#93C5FD" CharacterSpacing="1" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+
+                <VerticalStackLayout BindableLayout.ItemsSource="{Binding Recommendations}" Spacing="6">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <Label Text="{Binding .}" FontSize="13" TextColor="#E2E8F0" LineHeight="1.25" />
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </Border>
+
+        <!-- РЯДОК 2: СПИСОК ЗАПРАВОК / ЗАРЯДОК -->
+        <CollectionView Grid.Row="2" ItemsSource="{Binding Records}">
+            <CollectionView.EmptyView>
+                <Border BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="40" VerticalOptions="Center">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="18" />
+                    </Border.StrokeShape>
+                    <VerticalStackLayout HorizontalOptions="Center" Spacing="10">
+                        <Label Text="◈" FontSize="42" TextColor="#60A5FA" HorizontalOptions="Center" />
+                        <Label Text="Записів про заправку ще немає" FontSize="18" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" />
+                        <Label Text="Натисніть «＋ Додати заправку / зарядку», щоб почати розрахунок реальної витрати" FontSize="13" TextColor="#94A3B8" HorizontalTextAlignment="Center" />
+                    </VerticalStackLayout>
+                </Border>
+            </CollectionView.EmptyView>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <SwipeView Margin="0,0,0,12">
+                        <SwipeView.RightItems>
+                            <SwipeItems>
+                                <SwipeItem Text="Редагувати"
+                                           BackgroundColor="#3B82F6"
+                                           Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:FuelHistoryViewModel}}, Path=EditRecordCommand}"
+                                           CommandParameter="{Binding .}" />
+                                <SwipeItem Text="Видалити"
+                                           BackgroundColor="#EF4444"
+                                           Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:FuelHistoryViewModel}}, Path=DeleteRecordCommand}"
+                                           CommandParameter="{Binding .}" />
+                            </SwipeItems>
+                        </SwipeView.RightItems>
+
+                        <Border BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="20,16">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="16" />
+                            </Border.StrokeShape>
+
+                            <Grid ColumnDefinitions="Auto, *, Auto" ColumnSpacing="16" VerticalOptions="Center">
+                                <!-- Ліва іконка чека -->
+                                <Border Grid.Column="0" BackgroundColor="#33405E" Stroke="#475577" StrokeThickness="1" WidthRequest="50" HeightRequest="50">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="14" />
+                                    </Border.StrokeShape>
+                                    <Label Text="◈" FontSize="20" TextColor="#60A5FA" HorizontalOptions="Center" VerticalOptions="Center" />
+                                </Border>
+
+                                <!-- Центральна інформація: Станція, Дата, Зірки, Об'єм -->
+                                <VerticalStackLayout Grid.Column="1" Spacing="5" VerticalOptions="Center">
+                                    <HorizontalStackLayout Spacing="12" VerticalOptions="Center">
+                                        <Label Text="{Binding StationName}" FontSize="18" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                        <Label Text="{Binding QualityStars}" FontSize="14" TextColor="#FBBF24" VerticalOptions="Center" />
+                                        <Label Text="{Binding Date, StringFormat='{0:dd.MM.yyyy}'}" FontSize="12" TextColor="#94A3B8" VerticalOptions="Center" />
+                                    </HorizontalStackLayout>
+
+                                    <HorizontalStackLayout Spacing="6" VerticalOptions="Center">
+                                        <Label Text="{Binding Quantity, StringFormat='{0} од.'}" FontSize="14" FontAttributes="Bold" TextColor="#CBD5E1" />
+                                        <Label Text="×" FontSize="14" TextColor="#64748B" />
+                                        <Label Text="{Binding DisplayPricePerUnit}" FontSize="14" TextColor="#94A3B8" />
+                                        <Label Text="{Binding Currency}" FontSize="13" TextColor="#94A3B8" />
+                                    </HorizontalStackLayout>
+
+                                    <!-- Реальна витрата (показується, коли розраховано) -->
+                                    <Border BackgroundColor="#064E3B" StrokeThickness="0" Padding="10,4" HorizontalOptions="Start" Margin="0,4,0,0"
+                                            IsVisible="{Binding CalculatedConsumption, Converter={StaticResource NotNullToBoolConverter}}">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="8" />
+                                        </Border.StrokeShape>
+                                        <HorizontalStackLayout Spacing="6">
+                                            <Label Text="✦ Реальна витрата:" FontSize="12" FontAttributes="Bold" TextColor="#6EE7B7" />
+                                            <Label Text="{Binding DisplayConsumption, StringFormat='{0:F1}'}" FontSize="12" FontAttributes="Bold" TextColor="#A7F3D0" />
+                                            <Label Text="{Binding ConsumptionLabel}" FontSize="12" FontAttributes="Bold" TextColor="#A7F3D0" />
+                                        </HorizontalStackLayout>
+                                    </Border>
+                                </VerticalStackLayout>
+
+                                <!-- Права колонка: Загальна сума та Пробіг -->
+                                <VerticalStackLayout Grid.Column="2" Spacing="4" HorizontalOptions="End" VerticalOptions="Center">
+                                    <HorizontalStackLayout Spacing="4" HorizontalOptions="End">
+                                        <Label Text="{Binding DisplayTotalCost}" FontSize="19" FontAttributes="Bold" TextColor="#34D399" />
+                                        <Label Text="{Binding Currency}" FontSize="14" FontAttributes="Bold" TextColor="#34D399" VerticalOptions="End" Margin="0,0,0,2" />
+                                    </HorizontalStackLayout>
+
+                                    <Border BackgroundColor="#33405E" StrokeThickness="0" Padding="10,4" HorizontalOptions="End">
+                                        <Border.StrokeShape>
+                                            <RoundRectangle CornerRadius="8" />
+                                        </Border.StrokeShape>
+                                        <HorizontalStackLayout Spacing="4">
+                                            <Label Text="Одометр:" FontSize="11" TextColor="#94A3B8" />
+                                            <Label Text="{Binding DisplayOdometer}" FontSize="12" FontAttributes="Bold" TextColor="#E2E8F0" />
+                                            <Label Text="{Binding DistanceUnit}" FontSize="11" TextColor="#94A3B8" />
+                                        </HorizontalStackLayout>
+                                    </Border>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Border>
+                    </SwipeView>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
+</ContentPage>

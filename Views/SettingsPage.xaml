@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:views="clr-namespace:AutoLog.Views"
+                x:Class="AutoLog.Views.SettingsPage"
+                Title="Параметри профілю"
+                BackgroundColor="#1E2433">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="28,22" Spacing="20" MaximumWidthRequest="680" HorizontalOptions="Fill">
+            <VerticalStackLayout Spacing="4">
+                <Label Text="Налаштування профілю та одиниць виміру" FontSize="24" FontAttributes="Bold" TextColor="#F8FAFC" />
+                <Label Text="Усі розрахунки витрат та цін автоматично конвертуються за обраними параметрами" FontSize="13" TextColor="#94A3B8" />
+            </VerticalStackLayout>
+
+            <Border BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="24">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="18" />
+                </Border.StrokeShape>
+                <VerticalStackLayout Spacing="18">
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Ім'я власника автопарку" FontSize="13" FontAttributes="Bold" TextColor="#CBD5E1" />
+                        <Entry Placeholder="Ваше ім'я" Text="{Binding UserName}" BackgroundColor="#313B54" TextColor="White" />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Основна валюта відображення" FontSize="13" FontAttributes="Bold" TextColor="#CBD5E1" />
+                        <Picker SelectedItem="{Binding Currency}" BackgroundColor="#313B54" TextColor="White">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>грн</x:String>
+                                    <x:String>$ (USD)</x:String>
+                                    <x:String>€ (EUR)</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Одиниці виміру дистанції" FontSize="13" FontAttributes="Bold" TextColor="#CBD5E1" />
+                        <Picker SelectedItem="{Binding DistanceUnit}" BackgroundColor="#313B54" TextColor="White">
+                            <Picker.ItemsSource>
+                                <x:Array Type="{x:Type x:String}">
+                                    <x:String>км</x:String>
+                                    <x:String>милі</x:String>
+                                </x:Array>
+                            </Picker.ItemsSource>
+                        </Picker>
+                    </VerticalStackLayout>
+
+                    <Border BackgroundColor="#064E3B" StrokeThickness="0" Padding="14,10" Margin="0,6,0,0">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="10" />
+                        </Border.StrokeShape>
+                        <Label Text="✦  Параметри зберігаються миттєво та застосовуються до всього автопарку" FontSize="12" FontAttributes="Bold" TextColor="#6EE7B7" HorizontalOptions="Center" />
+                    </Border>
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

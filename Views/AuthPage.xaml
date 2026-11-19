@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoLog.Views.AuthPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#0B0E14">
+
+    <Grid>
+        <!-- ШАР 1: Фотографія на всю сторінку як фон -->
+        <Image Source="{Binding BackgroundImageSource}"
+               Aspect="AspectFill"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill" />
+
+        <!-- ШАР 2: Напівпрозоре затемнення поверх фото, щоб меню чітко виділялося -->
+        <BoxView Color="#55151C28"
+                 HorizontalOptions="Fill"
+                 VerticalOptions="Fill" />
+
+        <!-- ШАР 3: Центральне меню Входу / Реєстрації поверх фотографії -->
+        <ScrollView VerticalOptions="Center" HorizontalOptions="Center">
+            <Border BackgroundColor="#E6161B26"
+                    Stroke="#384152"
+                    StrokeThickness="1"
+                    WidthRequest="440"
+                    Padding="36,32"
+                    Margin="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="24" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="18">
+
+                    <!-- Логотип зверху картки -->
+                    <HorizontalStackLayout Spacing="10" HorizontalOptions="Center" Margin="0,0,0,4">
+                        <Border BackgroundColor="#3B82F6" WidthRequest="36" HeightRequest="36" StrokeThickness="0">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10" />
+                            </Border.StrokeShape>
+                            <Label Text="🚘" FontSize="18" HorizontalOptions="Center" VerticalOptions="Center" />
+                        </Border>
+                        <Label Text="AutoLog" FontSize="22" FontAttributes="Bold" TextColor="White" VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <!-- Заголовок (у режимі Реєстрації показується тільки "Створіть акаунт" без жодних зайвих фраз) -->
+                    <VerticalStackLayout Spacing="6" HorizontalOptions="Center">
+                        <Label Text="{Binding HeaderTitle}" FontSize="28" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" />
+                        <Label Text="Система моніторингу автопарку та витрат пального"
+                               IsVisible="{Binding IsLoginMode}"
+                               FontSize="13"
+                               TextColor="#9CA3AF"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center" />
+                    </VerticalStackLayout>
+
+                    <!-- Поле: Ім'я та прізвище (тільки при Реєстрації) -->
+                    <VerticalStackLayout Spacing="6" IsVisible="{Binding IsRegisterMode}">
+                        <Label Text="Ім'я та прізвище" FontSize="13" FontAttributes="Bold" TextColor="#D1D5DB" />
+                        <Border BackgroundColor="#232838" Stroke="#343B52" StrokeThickness="1" Padding="12,4">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10" />
+                            </Border.StrokeShape>
+                            <Entry Placeholder="Введіть ім'я та прізвище" Text="{Binding FullName}" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" />
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <!-- Поле: Електронна пошта -->
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Електронна пошта" FontSize="13" FontAttributes="Bold" TextColor="#D1D5DB" />
+                        <Border BackgroundColor="#232838" Stroke="#343B52" StrokeThickness="1" Padding="12,4">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10" />
+                            </Border.StrokeShape>
+                            <Entry Placeholder="name@email.com" Text="{Binding Email}" Keyboard="Email" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" />
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <!-- Поле: Пароль -->
+                    <VerticalStackLayout Spacing="6">
+                        <Label Text="Пароль" FontSize="13" FontAttributes="Bold" TextColor="#D1D5DB" />
+                        <Border BackgroundColor="#232838" Stroke="#343B52" StrokeThickness="1" Padding="12,4">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10" />
+                            </Border.StrokeShape>
+                            <Entry Placeholder="Мінімум 6 символів" Text="{Binding Password}" IsPassword="True" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" />
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <!-- Поле: Підтвердження пароля (тільки при Реєстрації) -->
+                    <VerticalStackLayout Spacing="6" IsVisible="{Binding IsRegisterMode}">
+                        <Label Text="Підтвердження пароля" FontSize="13" FontAttributes="Bold" TextColor="#D1D5DB" />
+                        <Border BackgroundColor="#232838" Stroke="#343B52" StrokeThickness="1" Padding="12,4">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10" />
+                            </Border.StrokeShape>
+                            <Entry Placeholder="Повторіть пароль" Text="{Binding ConfirmPassword}" IsPassword="True" TextColor="White" PlaceholderColor="#6B7280" BackgroundColor="Transparent" />
+                        </Border>
+                    </VerticalStackLayout>
+
+                    <!-- Кнопка дії -->
+                    <Button Text="{Binding SubmitButtonText}"
+                            Command="{Binding SubmitCommand}"
+                            BackgroundColor="#3B82F6"
+                            TextColor="White"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            HeightRequest="50"
+                            CornerRadius="12"
+                            Margin="0,6,0,0" />
+
+                    <!-- Перемикач режиму -->
+                    <HorizontalStackLayout HorizontalOptions="Center" Spacing="6" Margin="0,4,0,0">
+                        <Label Text="{Binding SwitchPromptText}" FontSize="14" TextColor="#9CA3AF" VerticalOptions="Center" />
+                        <Label Text="{Binding SwitchActionText}" FontSize="14" FontAttributes="Bold" TextColor="#60A5FA" VerticalOptions="Center">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding ToggleModeCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </HorizontalStackLayout>
+
+                </VerticalStackLayout>
+            </Border>
+        </ScrollView>
+    </Grid>
+</ContentPage>

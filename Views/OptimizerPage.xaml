@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:views="clr-namespace:AutoLog.Views"
+                x:Class="AutoLog.Views.OptimizerPage"
+                Title="Калькулятор вигоди АЗС"
+                BackgroundColor="#1E2433">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="28,22" Spacing="20" MaximumWidthRequest="720" HorizontalOptions="Fill">
+            <VerticalStackLayout Spacing="4">
+                <Label Text="Калькулятор економічної доцільності АЗС" FontSize="24" FontAttributes="Bold" TextColor="#F8FAFC" />
+                <Label Text="Розрахунок чистої вигоди поїздки на віддалену станцію з урахуванням витрат на дорогу туди й назад" FontSize="13" TextColor="#94A3B8" />
+            </VerticalStackLayout>
+
+            <Border BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="22">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="18" />
+                </Border.StrokeShape>
+                <VerticalStackLayout Spacing="16">
+                    <Label Text="❖  ПАРАМЕТРИ АВТОМОБІЛЯ ТА ОБ'ЄМ" FontSize="12" FontAttributes="Bold" TextColor="#60A5FA" CharacterSpacing="1" />
+                    <Grid ColumnDefinitions="*, *" ColumnSpacing="16">
+                        <VerticalStackLayout Grid.Column="0" Spacing="6">
+                            <Label Text="Витрата (л або кВт / 100 км)" FontSize="13" TextColor="#CBD5E1" />
+                            <Entry Text="{Binding FuelConsumption}" Keyboard="Numeric" BackgroundColor="#313B54" TextColor="White" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1" Spacing="6">
+                            <Label Text="Запланований об'єм заправки" FontSize="13" TextColor="#CBD5E1" />
+                            <Entry Text="{Binding RefillVolume}" Keyboard="Numeric" BackgroundColor="#313B54" TextColor="White" />
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <Label Text="◈  ПОРІВНЯННЯ СТАНЦІЙ ТА ВІДСТАНІ" FontSize="12" FontAttributes="Bold" TextColor="#34D399" CharacterSpacing="1" Margin="0,8,0,0" />
+                    <Grid ColumnDefinitions="*, *, *" ColumnSpacing="14">
+                        <VerticalStackLayout Grid.Column="0" Spacing="6">
+                            <Label Text="Ціна поруч (грн)" FontSize="13" TextColor="#CBD5E1" />
+                            <Entry Text="{Binding CurrentPrice}" Keyboard="Numeric" BackgroundColor="#313B54" TextColor="White" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="1" Spacing="6">
+                            <Label Text="Ціна дешевшої АЗС" FontSize="13" TextColor="#CBD5E1" />
+                            <Entry Text="{Binding TargetPrice}" Keyboard="Numeric" BackgroundColor="#313B54" TextColor="White" />
+                        </VerticalStackLayout>
+                        <VerticalStackLayout Grid.Column="2" Spacing="6">
+                            <Label Text="Відстань в 1 бік (км)" FontSize="13" TextColor="#CBD5E1" />
+                            <Entry Text="{Binding Distance}" Keyboard="Numeric" BackgroundColor="#313B54" TextColor="White" />
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <Button Text="Розрахувати чисту вигоду маршруту"
+                            Command="{Binding CalculateCommand}"
+                            BackgroundColor="#3B82F6"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            HeightRequest="50"
+                            CornerRadius="12"
+                            Margin="0,8,0,0" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="22">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="18" />
+                </Border.StrokeShape>
+                <VerticalStackLayout Spacing="6" HorizontalOptions="Center">
+                    <Label Text="ВЕРДИКТ ОПТИМІЗАЦІЙНОГО АЛГОРИТМУ" FontSize="11" FontAttributes="Bold" TextColor="#94A3B8" CharacterSpacing="1.2" HorizontalOptions="Center" />
+                    <Label Text="{Binding ResultText}" TextColor="{Binding ResultColor}" FontSize="19" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+                </VerticalStackLayout>
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

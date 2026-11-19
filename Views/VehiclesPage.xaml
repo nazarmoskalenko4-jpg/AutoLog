@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:AutoLog.ViewModels"
+             x:Class="AutoLog.Views.VehiclesPage"
+             Title="Керування автопарком"
+             BackgroundColor="#1E2433">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="28,22" Spacing="22" MaximumWidthRequest="980" HorizontalOptions="Fill">
+
+            <!-- ПРИВІТАННЯ ТА КНОПКА ДОДАВАННЯ АВТО -->
+            <Grid ColumnDefinitions="*, Auto" VerticalOptions="Center">
+                <VerticalStackLayout Grid.Column="0" Spacing="4">
+                    <Label Text="{Binding WelcomeMessage}" FontSize="26" FontAttributes="Bold" TextColor="#F8FAFC" />
+                    <Label Text="Огляд вашого транспорту, експлуатаційних витрат та моніторинг провідних АЗС" FontSize="14" TextColor="#94A3B8" />
+                </VerticalStackLayout>
+
+                <Button Grid.Column="1"
+                        Text="＋  Додати автомобіль"
+                        Command="{Binding AddVehicleCommand}"
+                        BackgroundColor="#3B82F6"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="14"
+                        HeightRequest="46"
+                        Padding="22,0"
+                        CornerRadius="12"
+                        VerticalOptions="Center" />
+            </Grid>
+
+            <!-- KPI-СТРІЧКА ШВИДКОЇ АНАЛІТИКИ -->
+            <Grid ColumnDefinitions="*, *, *, *" ColumnSpacing="14">
+                <Border Grid.Column="0" BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="16,14">
+                    <Border.StrokeShape><RoundRectangle CornerRadius="14" /></Border.StrokeShape>
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="❖  ВСЬОГО В ГАРАЖІ" FontSize="11" FontAttributes="Bold" TextColor="#94A3B8" />
+                        <Label Text="{Binding TotalVehiclesCount, StringFormat='{0} авто'}" FontSize="22" FontAttributes="Bold" TextColor="White" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Column="1" BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="16,14">
+                    <Border.StrokeShape><RoundRectangle CornerRadius="14" /></Border.StrokeShape>
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="◈  ДВЗ ТА ГІБРИДИ" FontSize="11" FontAttributes="Bold" TextColor="#60A5FA" />
+                        <Label Text="{Binding IceAndHybridCount, StringFormat='{0} од.'}" FontSize="22" FontAttributes="Bold" TextColor="White" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Column="2" BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="16,14">
+                    <Border.StrokeShape><RoundRectangle CornerRadius="14" /></Border.StrokeShape>
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="⚡  ЕЛЕКТРОКАРИ" FontSize="11" FontAttributes="Bold" TextColor="#34D399" />
+                        <Label Text="{Binding EvCount, StringFormat='{0} од.'}" FontSize="22" FontAttributes="Bold" TextColor="White" />
+                    </VerticalStackLayout>
+                </Border>
+
+                <Border Grid.Column="3" BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="16,14">
+                    <Border.StrokeShape><RoundRectangle CornerRadius="14" /></Border.StrokeShape>
+                    <VerticalStackLayout Spacing="4">
+                        <Label Text="✦  СЕРЕДНЯ ВИТРАТА" FontSize="11" FontAttributes="Bold" TextColor="#FBBF24" />
+                        <Label Text="{Binding AverageFleetConsumption}" FontSize="22" FontAttributes="Bold" TextColor="White" />
+                    </VerticalStackLayout>
+                </Border>
+            </Grid>
+
+            <!-- СЕКЦІЯ: ЖИВІ ВІДЖЕТИ ТОП-4 АЗС (РЕЙТИНГ + ЦІНИ) -->
+            <VerticalStackLayout Spacing="12">
+                <Grid ColumnDefinitions="*, Auto">
+                    <Label Grid.Column="0" Text="МОНІТОРИНГ ТОП-АЗС: РЕЙТИНГ ЯКОСТІ ТА ЦІНИ" FontSize="12" FontAttributes="Bold" TextColor="#94A3B8" CharacterSpacing="1.2" VerticalOptions="Center" />
+                    <Label Grid.Column="1" Text="{Binding PricesStatusText}" FontSize="12" FontAttributes="Bold" TextColor="#34D399" VerticalOptions="Center" />
+                </Grid>
+
+                <!-- Надійний FlexLayout замість CollectionView (гарантовано працює на macOS) -->
+                <FlexLayout BindableLayout.ItemsSource="{Binding FuelStations}"
+                            Wrap="Wrap"
+                            JustifyContent="SpaceBetween"
+                            AlignItems="Stretch">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <Border BackgroundColor="#252E42" Stroke="#3B4764" StrokeThickness="1" Padding="16,14" WidthRequest="220" MinimumHeightRequest="220" Margin="0,0,0,12">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="16" />
+                                </Border.StrokeShape>
+
+                                <VerticalStackLayout Spacing="10">
+                                    <!-- Назва АЗС + Кольоровий маркер -->
+                                    <HorizontalStackLayout Spacing="8" VerticalOptions="Center">
+                                        <Border BackgroundColor="{Binding AccentColor}" WidthRequest="10" HeightRequest="10" StrokeThickness="0" VerticalOptions="Center">
+                                            <Border.StrokeShape><RoundRectangle CornerRadius="5" /></Border.StrokeShape>
+                                        </Border>
+                                        <Label Text="{Binding Name}" FontSize="18" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                    </HorizontalStackLayout>
+
+                                    <!-- Рейтинг користувачів -->
+                                    <HorizontalStackLayout Spacing="6" VerticalOptions="Center">
+                                        <Label Text="{Binding StarsDisplay}" FontSize="13" TextColor="#FBBF24" VerticalOptions="Center" />
+                                        <Label Text="{Binding RatingSummary}" FontSize="12" FontAttributes="Bold" TextColor="#CBD5E1" VerticalOptions="Center" />
+                                    </HorizontalStackLayout>
+
+                                    <BoxView HeightRequest="1" Color="#33405E" Margin="0,2" />
+
+                                    <!-- Ціни на пальне -->
+                                    <VerticalStackLayout BindableLayout.ItemsSource="{Binding Prices}" Spacing="6">
+                                        <BindableLayout.ItemTemplate>
+                                            <DataTemplate>
+                                                <Grid ColumnDefinitions="*, Auto">
+                                                    <Label Grid.Column="0" Text="{Binding FuelName}" FontSize="12" TextColor="#94A3B8" VerticalOptions="Center" />
+                                                    <Label Grid.Column="1" Text="{Binding PriceDisplay}" FontSize="13" FontAttributes="Bold" TextColor="#E2E8F0" VerticalOptions="Center" />
+                                                </Grid>
+                                            </DataTemplate>
+                                        </BindableLayout.ItemTemplate>
+                                    </VerticalStackLayout>
+                                </VerticalStackLayout>
+                            </Border>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </FlexLayout>
+            </VerticalStackLayout>
+
+            <!-- СЕКЦІЯ: СПИСОК АВТОМОБІЛІВ КОРИСТУВАЧА -->
+            <VerticalStackLayout Spacing="12">
+                <Label Text="ВАШІ ТРАНСПОРТНІ ЗАСОБИ" FontSize="12" FontAttributes="Bold" TextColor="#94A3B8" CharacterSpacing="1.2" />
+
+                <VerticalStackLayout BindableLayout.ItemsSource="{Binding Vehicles}" Spacing="14">
+                    <BindableLayout.EmptyView>
+                        <Border BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="36">
+                            <Border.StrokeShape><RoundRectangle CornerRadius="18" /></Border.StrokeShape>
+                            <VerticalStackLayout HorizontalOptions="Center" Spacing="10">
+                                <Label Text="◈" FontSize="44" TextColor="#60A5FA" HorizontalOptions="Center" />
+                                <Label Text="Ваш гараж поки що порожній" FontSize="19" FontAttributes="Bold" TextColor="White" HorizontalOptions="Center" />
+                                <Label Text="Натисніть «＋ Додати автомобіль», щоб обрати авто з каталогу Топ-100" FontSize="13" TextColor="#CBD5E1" HorizontalTextAlignment="Center" />
+                            </VerticalStackLayout>
+                        </Border>
+                    </BindableLayout.EmptyView>
+
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <SwipeView>
+                                <SwipeView.RightItems>
+                                    <SwipeItems>
+                                        <SwipeItem Text="Редагувати"
+                                                   BackgroundColor="#3B82F6"
+                                                   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:VehiclesViewModel}}, Path=EditVehicleCommand}"
+                                                   CommandParameter="{Binding .}" />
+                                        <SwipeItem Text="Видалити"
+                                                   BackgroundColor="#EF4444"
+                                                   Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:VehiclesViewModel}}, Path=DeleteVehicleCommand}"
+                                                   CommandParameter="{Binding .}" />
+                                    </SwipeItems>
+                                </SwipeView.RightItems>
+
+                                <Border BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="20">
+                                    <Border.StrokeShape><RoundRectangle CornerRadius="18" /></Border.StrokeShape>
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:VehiclesViewModel}}, Path=VehicleSelectedCommand}"
+                                            CommandParameter="{Binding .}" />
+                                    </Border.GestureRecognizers>
+
+                                    <Grid ColumnDefinitions="Auto, *, Auto" ColumnSpacing="18" VerticalOptions="Center">
+                                        <Border Grid.Column="0" BackgroundColor="#33405E" Stroke="#475577" StrokeThickness="1" WidthRequest="58" HeightRequest="58">
+                                            <Border.StrokeShape><RoundRectangle CornerRadius="16" /></Border.StrokeShape>
+                                            <Label Text="{Binding VehicleIcon}" FontSize="26" TextColor="#60A5FA" HorizontalOptions="Center" VerticalOptions="Center" />
+                                        </Border>
+
+                                        <VerticalStackLayout Grid.Column="1" Spacing="8" VerticalOptions="Center">
+                                            <HorizontalStackLayout Spacing="8" VerticalOptions="Center">
+                                                <Label Text="{Binding Make}" FontSize="20" FontAttributes="Bold" TextColor="#F8FAFC" />
+                                                <Label Text="{Binding Model}" FontSize="20" TextColor="#CBD5E1" />
+                                            </HorizontalStackLayout>
+
+                                            <HorizontalStackLayout Spacing="10">
+                                                <Border BackgroundColor="#33405E" StrokeThickness="0" Padding="10,4">
+                                                    <Border.StrokeShape><RoundRectangle CornerRadius="8" /></Border.StrokeShape>
+                                                    <Label Text="{Binding Year, StringFormat='{0} рік'}" FontSize="12" TextColor="#E2E8F0" />
+                                                </Border>
+
+                                                <Border BackgroundColor="#1D4ED8" StrokeThickness="0" Padding="10,4">
+                                                    <Border.StrokeShape><RoundRectangle CornerRadius="8" /></Border.StrokeShape>
+                                                    <Label Text="{Binding EngineType}" FontSize="12" TextColor="#DBEAFE" FontAttributes="Bold" />
+                                                </Border>
+
+                                                <Border BackgroundColor="#047857" StrokeThickness="0" Padding="10,4">
+                                                    <Border.StrokeShape><RoundRectangle CornerRadius="8" /></Border.StrokeShape>
+                                                    <Label Text="{Binding SpecsSummary}" FontSize="12" TextColor="#D1FAE5" FontAttributes="Bold" />
+                                                </Border>
+                                            </HorizontalStackLayout>
+                                        </VerticalStackLayout>
+
+                                        <Border Grid.Column="2" BackgroundColor="#33405E" Stroke="#475577" StrokeThickness="1" Padding="16,10" VerticalOptions="Center">
+                                            <Border.StrokeShape><RoundRectangle CornerRadius="12" /></Border.StrokeShape>
+                                            <Label Text="Історія та поради ❯" FontSize="13" FontAttributes="Bold" TextColor="#93C5FD" />
+                                        </Border>
+                                    </Grid>
+                                </Border>
+                            </SwipeView>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

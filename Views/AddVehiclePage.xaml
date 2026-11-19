@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:views="clr-namespace:AutoLog.Views"
+                xmlns:viewModels="clr-namespace:AutoLog.ViewModels"
+                x:Class="AutoLog.Views.AddVehiclePage"
+                Title="Конфігуратор авто"
+                BackgroundColor="#1E2433">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="20" MaximumWidthRequest="760" HorizontalOptions="Fill">
+
+            <VerticalStackLayout Spacing="4">
+                <Button Text="‹  Назад до автопарку"
+        Clicked="OnBackClicked"
+        BackgroundColor="#283147"
+        TextColor="#E2E8F0"
+        BorderColor="#3B4764"
+        BorderWidth="1"
+        FontAttributes="Bold"
+        HorizontalOptions="Start"
+        HeightRequest="40"
+        Padding="16,0"
+        CornerRadius="10" />
+                <Label Text="Конфігурація транспортного засобу" FontSize="24" FontAttributes="Bold" TextColor="White" />
+                <Label Text="Оберіть параметри з розумного каталогу Топ-100 або налаштуйте специфікацію вручну" FontSize="13" TextColor="#8E95A9" />
+            </VerticalStackLayout>
+
+            <!-- КАРТКА 1: КАСКАДНИЙ ВИБІР ІЗ КАТАЛОГУ -->
+            <Border BackgroundColor="#181C26" Stroke="#2A3042" StrokeThickness="1" Padding="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="16" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="16">
+                    <Grid ColumnDefinitions="*, Auto">
+                        <Label Grid.Column="0" Text="⚡ КРОК 1. ТИП СИЛОВОЇ УСТАНОВКИ" FontSize="12" FontAttributes="Bold" TextColor="#60A5FA" CharacterSpacing="1" />
+                        <Label Grid.Column="1" Text="{Binding CounterText}" FontSize="12" TextColor="#8E95A9" />
+                    </Grid>
+
+                    <FlexLayout Wrap="Wrap" JustifyContent="Start" AlignItems="Center">
+                        <Button Text="🌐 Усі авто" Command="{Binding SelectCategoryCommand}" CommandParameter="Усі"
+                                BackgroundColor="{Binding AllChipBg}" TextColor="White" FontAttributes="Bold"
+                                CornerRadius="10" HeightRequest="40" Padding="16,0" Margin="0,0,8,8" />
+
+                        <Button Text="⚡ Електро" Command="{Binding SelectCategoryCommand}" CommandParameter="Електро"
+                                BackgroundColor="{Binding EvChipBg}" TextColor="White" FontAttributes="Bold"
+                                CornerRadius="10" HeightRequest="40" Padding="16,0" Margin="0,0,8,8" />
+
+                        <Button Text="🔋 Гібрид" Command="{Binding SelectCategoryCommand}" CommandParameter="Гібрид"
+                                BackgroundColor="{Binding HybridChipBg}" TextColor="White" FontAttributes="Bold"
+                                CornerRadius="10" HeightRequest="40" Padding="16,0" Margin="0,0,8,8" />
+
+                        <Button Text="⛽ Бензин" Command="{Binding SelectCategoryCommand}" CommandParameter="Бензин"
+                                BackgroundColor="{Binding PetrolChipBg}" TextColor="White" FontAttributes="Bold"
+                                CornerRadius="10" HeightRequest="40" Padding="16,0" Margin="0,0,8,8" />
+
+                        <Button Text="🛢️ Дизель" Command="{Binding SelectCategoryCommand}" CommandParameter="Дизель"
+                                BackgroundColor="{Binding DieselChipBg}" TextColor="White" FontAttributes="Bold"
+                                CornerRadius="10" HeightRequest="40" Padding="16,0" Margin="0,0,8,8" />
+                    </FlexLayout>
+
+                    <!-- Крок 2 і Крок 3: Кастомні кнопки-списки -->
+                    <Grid ColumnDefinitions="*, *" ColumnSpacing="16">
+                        <VerticalStackLayout Grid.Column="0" Spacing="6">
+                            <Label Text="🏢 КРОК 2. МАРКА АВТО" FontSize="11" FontAttributes="Bold" TextColor="#9CA3AF" />
+                            <Border BackgroundColor="#232838" Stroke="#3B82F6" StrokeThickness="1" Padding="14,12">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="10" />
+                                </Border.StrokeShape>
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ToggleBrandDropdownCommand}" />
+                                </Border.GestureRecognizers>
+                                <Grid ColumnDefinitions="*, Auto">
+                                    <Label Grid.Column="0" Text="{Binding SelectedBrandDisplay}" TextColor="White" FontSize="14" VerticalOptions="Center" />
+                                    <Label Grid.Column="1" Text="▼" TextColor="#60A5FA" FontSize="12" VerticalOptions="Center" />
+                                </Grid>
+                            </Border>
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Grid.Column="1" Spacing="6">
+                            <Label Text="🚘 КРОК 3. МОДЕЛЬ ТА ДВИГУН" FontSize="11" FontAttributes="Bold" TextColor="#9CA3AF" />
+                            <Border BackgroundColor="#232838" Stroke="#343B52" StrokeThickness="1" Padding="14,12">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="10" />
+                                </Border.StrokeShape>
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding ToggleModelDropdownCommand}" />
+                                </Border.GestureRecognizers>
+                                <Grid ColumnDefinitions="*, Auto">
+                                    <Label Grid.Column="0" Text="{Binding SelectedModelDisplay}" TextColor="White" FontSize="14" VerticalOptions="Center" LineBreakMode="TailTruncation" />
+                                    <Label Grid.Column="1" Text="▼" TextColor="#60A5FA" FontSize="12" VerticalOptions="Center" />
+                                </Grid>
+                            </Border>
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <!-- ВИПАДАЮЧИЙ СПИСОК МАРОК (з'являється при кліку на Крок 2) -->
+                    <Border IsVisible="{Binding IsBrandDropdownOpen}" BackgroundColor="#131620" Stroke="#3B82F6" StrokeThickness="1" Padding="10" MaximumHeightRequest="220">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12" />
+                        </Border.StrokeShape>
+                        <ScrollView>
+                            <FlexLayout BindableLayout.ItemsSource="{Binding AvailableBrands}" Wrap="Wrap" JustifyContent="Start">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <Button Text="{Binding .}"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:AddVehicleViewModel}}, Path=SelectBrandItemCommand}"
+                                                CommandParameter="{Binding .}"
+                                                BackgroundColor="#232838"
+                                                TextColor="White"
+                                                CornerRadius="8"
+                                                HeightRequest="36"
+                                                Padding="14,0"
+                                                Margin="4" />
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </FlexLayout>
+                        </ScrollView>
+                    </Border>
+
+                    <!-- ВИПАДАЮЧИЙ СПИСОК МОДЕЛЕЙ (з'являється при кліку на Крок 3) -->
+                    <Border IsVisible="{Binding IsModelDropdownOpen}" BackgroundColor="#131620" Stroke="#10B981" StrokeThickness="1" Padding="10" MaximumHeightRequest="220">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12" />
+                        </Border.StrokeShape>
+                        <ScrollView>
+                            <VerticalStackLayout BindableLayout.ItemsSource="{Binding AvailableModels}" Spacing="6">
+                                <BindableLayout.ItemTemplate>
+                                    <DataTemplate>
+                                        <Button Text="{Binding ModelDisplayName}"
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewModels:AddVehicleViewModel}}, Path=SelectModelItemCommand}"
+                                                CommandParameter="{Binding .}"
+                                                BackgroundColor="#232838"
+                                                TextColor="White"
+                                                CornerRadius="8"
+                                                HeightRequest="40"
+                                                HorizontalOptions="Fill" />
+                                    </DataTemplate>
+                                </BindableLayout.ItemTemplate>
+                            </VerticalStackLayout>
+                        </ScrollView>
+                    </Border>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- КАРТКА 2: ТЕХНІЧНІ ПАРАМЕТРИ -->
+            <Border BackgroundColor="#181C26" Stroke="#2A3042" StrokeThickness="1" Padding="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="16" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="16">
+                    <Label Text="📋 ПАСПОРТНІ ДАНІ ТРАНСПОРТНОГО ЗАСОБУ" FontSize="12" FontAttributes="Bold" TextColor="#10B981" CharacterSpacing="1" />
+
+                    <Grid ColumnDefinitions="*, *" RowDefinitions="Auto, Auto" ColumnSpacing="16" RowSpacing="14">
+                        <VerticalStackLayout Grid.Row="0" Grid.Column="0" Spacing="6">
+                            <Label Text="Марка" FontSize="12" TextColor="#8E95A9" />
+                            <Entry Placeholder="Напр., Toyota" Text="{Binding Make}" BackgroundColor="#232838" TextColor="White" PlaceholderColor="#6B7280" />
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="6">
+                            <Label Text="Модель та комплектація" FontSize="12" TextColor="#8E95A9" />
+                            <Entry Placeholder="Напр., Camry 2.5 Hybrid" Text="{Binding Model}" BackgroundColor="#232838" TextColor="White" PlaceholderColor="#6B7280" />
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Grid.Row="1" Grid.Column="0" Spacing="6">
+                            <Label Text="Рік випуску" FontSize="12" TextColor="#8E95A9" />
+                            <Entry Placeholder="2020" Text="{Binding Year}" Keyboard="Numeric" BackgroundColor="#232838" TextColor="White" />
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Grid.Row="1" Grid.Column="1" Spacing="6">
+                            <Label Text="Паспортна витрата (л або кВт / 100 км)" FontSize="12" TextColor="#8E95A9" />
+                            <Entry Placeholder="7.5" Text="{Binding FuelConsumption}" Keyboard="Numeric" BackgroundColor="#232838" TextColor="White" />
+                        </VerticalStackLayout>
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- КАРТКА 3: КОНФІГУРАЦІЯ ДЛЯ ЕКСПЕРТНОЇ СИСТЕМИ -->
+            <Border BackgroundColor="#181C26" Stroke="#2A3042" StrokeThickness="1" Padding="20">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="16" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="12">
+                    <Label Text="🧠 ПАРАМЕТРИ ДВИГУНА (ДЛЯ ЕКСПЕРТНОЇ СИСТЕМИ)" FontSize="12" FontAttributes="Bold" TextColor="#F59E0B" CharacterSpacing="1" />
+                    <Label Text="Визначаються автоматично при виборі авто з каталогу" FontSize="12" TextColor="#6B7280" Margin="0,0,0,4" />
+
+                    <Grid ColumnDefinitions="*, Auto" Padding="12,8" BackgroundColor="#232838">
+                        <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                            <Label Text="🚀 Турбонагнітач (Turbo / Bi-Turbo)" FontSize="14" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="Потребує високооктанового пального для захисту від детонації" FontSize="11" TextColor="#8E95A9" />
+                        </VerticalStackLayout>
+                        <Switch Grid.Column="1" IsToggled="{Binding HasTurbo}" OnColor="#3B82F6" />
+                    </Grid>
+
+                    <Grid ColumnDefinitions="*, Auto" Padding="12,8" BackgroundColor="#232838">
+                        <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                            <Label Text="💉 Пряме впорскування пального (GDI / TSI / FSI)" FontSize="14" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="Рекомендовано пальне з мийними присадками для захисту клапанів" FontSize="11" TextColor="#8E95A9" />
+                        </VerticalStackLayout>
+                        <Switch Grid.Column="1" IsToggled="{Binding HasDirectInjection}" OnColor="#3B82F6" />
+                    </Grid>
+
+                    <Grid ColumnDefinitions="*, Auto" Padding="12,8" BackgroundColor="#232838">
+                        <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                            <Label Text="💨 Сажовий фільтр (DPF / Євро-5+)" FontSize="14" FontAttributes="Bold" TextColor="White" />
+                            <Label Text="Чутливий до вмісту сірки та низьких температур узимку" FontSize="11" TextColor="#8E95A9" />
+                        </VerticalStackLayout>
+                        <Switch Grid.Column="1" IsToggled="{Binding HasDpf}" OnColor="#3B82F6" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Text="💾 Зберегти автомобіль у Гараж"
+                    Command="{Binding SaveCommand}"
+                    BackgroundColor="#3B82F6"
+                    TextColor="White"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HeightRequest="54"
+                    CornerRadius="14"
+                    Margin="0,4,0,20" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

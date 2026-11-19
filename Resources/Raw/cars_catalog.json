@@ -1,0 +1,5302 @@
+[
+  {
+    "data": {
+      "id": 1,
+      "brand": "nissan",
+      "model": "leaf",
+      "generation": "ze1",
+      "name": "leaf 40 kWh",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 320,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 17.0,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 40,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 270,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 2,
+      "brand": "nissan",
+      "model": "leaf",
+      "generation": "ze0",
+      "name": "leaf 24 kWh",
+      "year": 2013,
+      "specs": {
+        "power_hp": {
+          "v": 109,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 254,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 11.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 16.5,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 24,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 175,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 3,
+      "brand": "nissan",
+      "model": "leaf",
+      "generation": "ze1",
+      "name": "leaf e+ 62 kWh",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 217,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 340,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 6.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 18.5,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 62,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 385,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 4,
+      "brand": "tesla",
+      "model": "model-3",
+      "generation": "2017",
+      "name": "model 3 long range awd",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 440,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 510,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 4.4,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 16.0,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 75,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 560,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 5,
+      "brand": "tesla",
+      "model": "model-3",
+      "generation": "2017",
+      "name": "model 3 standard range plus",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 283,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 375,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 5.6,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 14.4,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 54,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 409,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 6,
+      "brand": "tesla",
+      "model": "model-y",
+      "generation": "2020",
+      "name": "model y long range",
+      "year": 2021,
+      "specs": {
+        "power_hp": {
+          "v": 514,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 493,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 5.0,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 16.9,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 75,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 533,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 7,
+      "brand": "tesla",
+      "model": "model-s",
+      "generation": "facelift-2016",
+      "name": "model s 100d",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 525,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 660,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 4.3,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 20.0,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 100,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 540,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 8,
+      "brand": "tesla",
+      "model": "model-x",
+      "generation": "facelift-2016",
+      "name": "model x 100d",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 525,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 660,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 4.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 22.0,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 100,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 475,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 9,
+      "brand": "volkswagen",
+      "model": "golf",
+      "generation": "e-golf-7",
+      "name": "e-golf",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 136,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 290,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.6,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 14.8,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 35.8,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 230,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 10,
+      "brand": "volkswagen",
+      "model": "id4",
+      "generation": "i1",
+      "name": "id.4 pro",
+      "year": 2021,
+      "specs": {
+        "power_hp": {
+          "v": 204,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 310,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 16.9,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 77,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 520,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 11,
+      "brand": "volkswagen",
+      "model": "id3",
+      "generation": "i1",
+      "name": "id.3 pro",
+      "year": 2021,
+      "specs": {
+        "power_hp": {
+          "v": 204,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 310,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.3,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 15.4,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 58,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 426,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 12,
+      "brand": "chevrolet",
+      "model": "bolt-ev",
+      "generation": "gen1",
+      "name": "bolt ev",
+      "year": 2017,
+      "specs": {
+        "power_hp": {
+          "v": 200,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 360,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 6.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 17.5,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 60,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 383,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 13,
+      "brand": "hyundai",
+      "model": "kona",
+      "generation": "electric-os",
+      "name": "kona electric 64 kWh",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 204,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 395,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.6,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 14.3,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 64,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 484,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 14,
+      "brand": "hyundai",
+      "model": "ioniq",
+      "generation": "ae",
+      "name": "ioniq electric",
+      "year": 2017,
+      "specs": {
+        "power_hp": {
+          "v": 120,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 295,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 13.8,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 28,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 311,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 15,
+      "brand": "hyundai",
+      "model": "ioniq-5",
+      "generation": "nE",
+      "name": "ioniq 5 rwd 77 kWh",
+      "year": 2022,
+      "specs": {
+        "power_hp": {
+          "v": 217,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 350,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.4,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 16.7,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 77.4,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 507,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 16,
+      "brand": "kia",
+      "model": "niro",
+      "generation": "ev-de",
+      "name": "e-niro 64 kWh",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 204,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 395,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 15.9,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 64,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 455,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 17,
+      "brand": "kia",
+      "model": "soul",
+      "generation": "ev-ps",
+      "name": "soul ev",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 109,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 285,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 11.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 16.0,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 27,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 212,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 18,
+      "brand": "kia",
+      "model": "ev6",
+      "generation": "cv",
+      "name": "ev6 rwd 77 kWh",
+      "year": 2022,
+      "specs": {
+        "power_hp": {
+          "v": 229,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 350,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.3,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 16.5,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 77.4,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 528,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 19,
+      "brand": "renault",
+      "model": "zoe",
+      "generation": "gen1",
+      "name": "zoe r135",
+      "year": 2020,
+      "specs": {
+        "power_hp": {
+          "v": 135,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 245,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 17.7,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 52,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 395,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 20,
+      "brand": "bmw",
+      "model": "i3",
+      "generation": "i01",
+      "name": "i3 94ah",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 170,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 250,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.3,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 13.1,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 33,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 235,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 21,
+      "brand": "audi",
+      "model": "e-tron",
+      "generation": "gen1",
+      "name": "e-tron 55 quattro",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 408,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 664,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 5.7,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 24.0,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 95,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 436,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 22,
+      "brand": "audi",
+      "model": "q4-e-tron",
+      "generation": "gen1",
+      "name": "q4 e-tron 40",
+      "year": 2021,
+      "specs": {
+        "power_hp": {
+          "v": 204,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 310,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 16.9,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 77,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 520,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 23,
+      "brand": "mercedes-benz",
+      "model": "eqc",
+      "generation": "n293",
+      "name": "eqc 400 4matic",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 408,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 765,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 5.1,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 22.0,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 80,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 417,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 24,
+      "brand": "jaguar",
+      "model": "i-pace",
+      "generation": "x590",
+      "name": "i-pace ev400",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 400,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 696,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 4.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 22.0,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 90,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 470,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 25,
+      "brand": "ford",
+      "model": "mustang-mach-e",
+      "generation": "gen1",
+      "name": "mustang mach-e extended range awd",
+      "year": 2021,
+      "specs": {
+        "power_hp": {
+          "v": 351,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 580,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 5.1,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 19.0,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 88,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 540,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 26,
+      "brand": "fiat",
+      "model": "500",
+      "generation": "500e-2020",
+      "name": "500e 42 kWh",
+      "year": 2021,
+      "specs": {
+        "power_hp": {
+          "v": 118,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 220,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.0,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 14.9,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 42,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 320,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 27,
+      "brand": "peugeot",
+      "model": "208",
+      "generation": "e-208-ii",
+      "name": "e-208",
+      "year": 2020,
+      "specs": {
+        "power_hp": {
+          "v": 136,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 260,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.1,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 16.0,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 50,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 340,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 28,
+      "brand": "skoda",
+      "model": "enyaq",
+      "generation": "iv",
+      "name": "enyaq iv 80",
+      "year": 2021,
+      "specs": {
+        "power_hp": {
+          "v": 204,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 310,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 16.4,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 77,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 534,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 29,
+      "brand": "byd",
+      "model": "dolphin",
+      "generation": "gen1",
+      "name": "dolphin 60 kWh",
+      "year": 2023,
+      "specs": {
+        "power_hp": {
+          "v": 204,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 310,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.0,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 13.9,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 60.4,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 427,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 30,
+      "brand": "byd",
+      "model": "qin-plus",
+      "generation": "ev",
+      "name": "qin plus ev 51 kWh",
+      "year": 2021,
+      "specs": {
+        "power_hp": {
+          "v": 184,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 280,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "electric",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.3,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 12.1,
+          "u": "kWh/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 0,
+          "u": "g/km",
+          "label": "CO₂"
+        },
+        "battery_kwh": {
+          "v": 51.1,
+          "u": "kWh",
+          "label": "Battery capacity"
+        },
+        "range_km": {
+          "v": 400,
+          "u": "km",
+          "label": "Range"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 31,
+      "brand": "toyota",
+      "model": "camry",
+      "generation": "xv70",
+      "name": "camry 2.5 hybrid",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 218,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 221,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.3,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 113,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 32,
+      "brand": "toyota",
+      "model": "rav4",
+      "generation": "xa50",
+      "name": "rav4 2.5 hybrid awd",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 222,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 221,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.1,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.5,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 124,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 33,
+      "brand": "toyota",
+      "model": "prius",
+      "generation": "xw50",
+      "name": "prius 1.8",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 122,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 142,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.6,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 90,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 34,
+      "brand": "toyota",
+      "model": "corolla",
+      "generation": "e210",
+      "name": "corolla 1.8 hybrid",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 122,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 142,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.5,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 102,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 35,
+      "brand": "toyota",
+      "model": "c-hr",
+      "generation": "ax10",
+      "name": "c-hr 1.8 hybrid",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 122,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 142,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 11.0,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.4,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 99,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 36,
+      "brand": "lexus",
+      "model": "rx",
+      "generation": "al20",
+      "name": "rx 450h",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 313,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 335,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.7,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 136,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 37,
+      "brand": "lexus",
+      "model": "nx",
+      "generation": "az10",
+      "name": "nx 300h",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 197,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 210,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.1,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 115,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 38,
+      "brand": "honda",
+      "model": "cr-v",
+      "generation": "rw",
+      "name": "cr-v 2.0 hybrid",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 184,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 315,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.3,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 120,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 39,
+      "brand": "hyundai",
+      "model": "ioniq",
+      "generation": "ae",
+      "name": "ioniq hybrid",
+      "year": 2017,
+      "specs": {
+        "power_hp": {
+          "v": 141,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 265,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 3.9,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 88,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 40,
+      "brand": "kia",
+      "model": "niro",
+      "generation": "de",
+      "name": "niro hev",
+      "year": 2017,
+      "specs": {
+        "power_hp": {
+          "v": 141,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 265,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 11.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.4,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 99,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 41,
+      "brand": "ford",
+      "model": "fusion",
+      "generation": "mk5",
+      "name": "fusion hybrid 2.0",
+      "year": 2017,
+      "specs": {
+        "power_hp": {
+          "v": 188,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 173,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.6,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 127,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 42,
+      "brand": "mitsubishi",
+      "model": "outlander",
+      "generation": "gf",
+      "name": "outlander phev 2.4",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 224,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 332,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "plug-in hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 1.9,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 43,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 43,
+      "brand": "volkswagen",
+      "model": "passat",
+      "generation": "b8",
+      "name": "passat gte 1.4 tsi",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 218,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 400,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "plug-in hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.4,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 1.6,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 37,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 44,
+      "brand": "bmw",
+      "model": "x5",
+      "generation": "f15",
+      "name": "x5 xdrive40e",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 313,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 450,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "plug-in hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 6.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 3.3,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 77,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 45,
+      "brand": "volvo",
+      "model": "xc60",
+      "generation": "ii",
+      "name": "xc60 t8 twin engine",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 407,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 640,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "plug-in hybrid",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 5.3,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 2.1,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 49,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 46,
+      "brand": "skoda",
+      "model": "octavia",
+      "generation": "a5",
+      "name": "octavia 1.6 mpi",
+      "year": 2008,
+      "specs": {
+        "power_hp": {
+          "v": 102,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 148,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 11.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.2,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 169,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 47,
+      "brand": "mazda",
+      "model": "6",
+      "generation": "gj",
+      "name": "6 2.5 skyactiv-g",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 192,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 256,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 158,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 48,
+      "brand": "skoda",
+      "model": "octavia",
+      "generation": "a7",
+      "name": "octavia 1.4 tsi",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 250,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.2,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 118,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 49,
+      "brand": "skoda",
+      "model": "octavia",
+      "generation": "a7",
+      "name": "octavia 2.0 tdi",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 320,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.6,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.4,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 114,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 50,
+      "brand": "skoda",
+      "model": "octavia",
+      "generation": "a5",
+      "name": "octavia 1.8 tsi",
+      "year": 2009,
+      "specs": {
+        "power_hp": {
+          "v": 160,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 250,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.2,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 163,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 51,
+      "brand": "skoda",
+      "model": "octavia",
+      "generation": "a8",
+      "name": "octavia 1.5 tsi",
+      "year": 2021,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 250,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.4,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 122,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 52,
+      "brand": "skoda",
+      "model": "superb",
+      "generation": "3t",
+      "name": "superb 2.0 tsi",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 220,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 350,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 6.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 158,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 53,
+      "brand": "skoda",
+      "model": "rapid",
+      "generation": "nh",
+      "name": "rapid 1.6 mpi",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 110,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 155,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.6,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.8,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 131,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 54,
+      "brand": "skoda",
+      "model": "kodiaq",
+      "generation": "ns",
+      "name": "kodiaq 2.0 tdi 4x4",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 340,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.7,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.8,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 151,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 55,
+      "brand": "volkswagen",
+      "model": "golf",
+      "generation": "mk7",
+      "name": "golf 1.4 tsi",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 125,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 200,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.1,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 113,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 56,
+      "brand": "volkswagen",
+      "model": "golf",
+      "generation": "mk7",
+      "name": "golf 2.0 tdi",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 340,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.6,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.2,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 109,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 57,
+      "brand": "volkswagen",
+      "model": "passat",
+      "generation": "b7",
+      "name": "passat 2.0 tdi",
+      "year": 2012,
+      "specs": {
+        "power_hp": {
+          "v": 140,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 320,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.3,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 130,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 58,
+      "brand": "volkswagen",
+      "model": "passat",
+      "generation": "b8",
+      "name": "passat 2.0 tdi",
+      "year": 2017,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 340,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.7,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.8,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 125,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 59,
+      "brand": "volkswagen",
+      "model": "passat",
+      "generation": "b6",
+      "name": "passat 2.0 tdi",
+      "year": 2008,
+      "specs": {
+        "power_hp": {
+          "v": 140,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 320,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.3,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.8,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 151,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 60,
+      "brand": "volkswagen",
+      "model": "tiguan",
+      "generation": "ii",
+      "name": "tiguan 2.0 tsi 4motion",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 180,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 320,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.7,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 174,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 61,
+      "brand": "volkswagen",
+      "model": "tiguan",
+      "generation": "i",
+      "name": "tiguan 2.0 tdi",
+      "year": 2013,
+      "specs": {
+        "power_hp": {
+          "v": 140,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 320,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.5,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 143,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 62,
+      "brand": "volkswagen",
+      "model": "touareg",
+      "generation": "iii",
+      "name": "touareg 3.0 tdi",
+      "year": 2019,
+      "specs": {
+        "power_hp": {
+          "v": 286,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 600,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 6.1,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 182,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 63,
+      "brand": "volkswagen",
+      "model": "polo",
+      "generation": "sedan",
+      "name": "polo sedan 1.6 mpi",
+      "year": 2013,
+      "specs": {
+        "power_hp": {
+          "v": 105,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 153,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.4,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.2,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 140,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 64,
+      "brand": "renault",
+      "model": "megane",
+      "generation": "iii",
+      "name": "megane 1.5 dci",
+      "year": 2012,
+      "specs": {
+        "power_hp": {
+          "v": 110,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 240,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 11.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 104,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 65,
+      "brand": "renault",
+      "model": "logan",
+      "generation": "ii",
+      "name": "logan 1.6",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 82,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 134,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 12.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.4,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 145,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 66,
+      "brand": "renault",
+      "model": "duster",
+      "generation": "i",
+      "name": "duster 1.5 dci",
+      "year": 2014,
+      "specs": {
+        "power_hp": {
+          "v": 109,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 240,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 12.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 130,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 67,
+      "brand": "toyota",
+      "model": "camry",
+      "generation": "xv50",
+      "name": "camry 2.5",
+      "year": 2014,
+      "specs": {
+        "power_hp": {
+          "v": 181,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 231,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.6,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.4,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 167,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 68,
+      "brand": "toyota",
+      "model": "camry",
+      "generation": "xv70",
+      "name": "camry 2.5",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 181,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 235,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 158,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 69,
+      "brand": "toyota",
+      "model": "corolla",
+      "generation": "e150",
+      "name": "corolla 1.6",
+      "year": 2010,
+      "specs": {
+        "power_hp": {
+          "v": 124,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 157,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.6,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 149,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 70,
+      "brand": "toyota",
+      "model": "rav4",
+      "generation": "xa40",
+      "name": "rav4 2.0",
+      "year": 2014,
+      "specs": {
+        "power_hp": {
+          "v": 146,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 187,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.7,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 174,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 71,
+      "brand": "toyota",
+      "model": "land-cruiser-prado",
+      "generation": "j150",
+      "name": "land cruiser prado 2.8 d-4d",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 177,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 450,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 11.7,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 8.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 208,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 72,
+      "brand": "toyota",
+      "model": "land-cruiser",
+      "generation": "j200",
+      "name": "land cruiser 200 4.5 d-4d",
+      "year": 2014,
+      "specs": {
+        "power_hp": {
+          "v": 235,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 615,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.6,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 9.5,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 247,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 73,
+      "brand": "hyundai",
+      "model": "tucson",
+      "generation": "tl",
+      "name": "tucson 2.0 crdi",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 185,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 400,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.3,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 164,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 74,
+      "brand": "hyundai",
+      "model": "tucson",
+      "generation": "tl",
+      "name": "tucson 1.6 t-gdi",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 177,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 265,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.1,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.1,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 160,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 75,
+      "brand": "hyundai",
+      "model": "elantra",
+      "generation": "ad",
+      "name": "elantra 2.0",
+      "year": 2017,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 192,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.6,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 158,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 76,
+      "brand": "hyundai",
+      "model": "accent",
+      "generation": "rb",
+      "name": "accent 1.4",
+      "year": 2013,
+      "specs": {
+        "power_hp": {
+          "v": 107,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 135,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 12.0,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 136,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 77,
+      "brand": "hyundai",
+      "model": "santa-fe",
+      "generation": "dm",
+      "name": "santa fe 2.2 crdi",
+      "year": 2013,
+      "specs": {
+        "power_hp": {
+          "v": 197,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 436,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.6,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 172,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 78,
+      "brand": "kia",
+      "model": "sportage",
+      "generation": "ql",
+      "name": "sportage 2.0 crdi",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 185,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 400,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.2,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 161,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 79,
+      "brand": "kia",
+      "model": "ceed",
+      "generation": "jd",
+      "name": "ceed 1.6 crdi",
+      "year": 2014,
+      "specs": {
+        "power_hp": {
+          "v": 128,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 260,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.4,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 114,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 80,
+      "brand": "kia",
+      "model": "rio",
+      "generation": "ub",
+      "name": "rio 1.4",
+      "year": 2014,
+      "specs": {
+        "power_hp": {
+          "v": 107,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 135,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 11.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.5,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 124,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 81,
+      "brand": "kia",
+      "model": "optima",
+      "generation": "jf",
+      "name": "optima 2.4",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 188,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 241,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 8.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 181,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 82,
+      "brand": "kia",
+      "model": "sorento",
+      "generation": "um",
+      "name": "sorento 2.2 crdi",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 200,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 441,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.3,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.8,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 177,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 83,
+      "brand": "mazda",
+      "model": "cx-5",
+      "generation": "ke",
+      "name": "cx-5 2.0 skyactiv-g",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 200,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.9,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 156,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 84,
+      "brand": "mazda",
+      "model": "cx-5",
+      "generation": "ke",
+      "name": "cx-5 2.2 skyactiv-d",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 175,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 420,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.4,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.6,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 146,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 85,
+      "brand": "mazda",
+      "model": "3",
+      "generation": "bm",
+      "name": "3 2.0 skyactiv-g",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 120,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 210,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.1,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 115,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 86,
+      "brand": "honda",
+      "model": "cr-v",
+      "generation": "rm",
+      "name": "cr-v 2.4",
+      "year": 2013,
+      "specs": {
+        "power_hp": {
+          "v": 190,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 244,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 8.3,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 188,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 87,
+      "brand": "honda",
+      "model": "civic",
+      "generation": "fk",
+      "name": "civic 1.5 vtec turbo",
+      "year": 2017,
+      "specs": {
+        "power_hp": {
+          "v": 182,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 240,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 136,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 88,
+      "brand": "honda",
+      "model": "accord",
+      "generation": "cu",
+      "name": "accord 2.4",
+      "year": 2010,
+      "specs": {
+        "power_hp": {
+          "v": 201,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 234,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.4,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 8.6,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 194,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 89,
+      "brand": "nissan",
+      "model": "qashqai",
+      "generation": "j11",
+      "name": "qashqai 1.2 dig-t",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 115,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 190,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.5,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 124,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 90,
+      "brand": "nissan",
+      "model": "qashqai",
+      "generation": "j11",
+      "name": "qashqai 1.6 dci",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 130,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 320,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.6,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 120,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 91,
+      "brand": "nissan",
+      "model": "x-trail",
+      "generation": "t32",
+      "name": "x-trail 2.0",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 144,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 200,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 10.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.3,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 165,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 92,
+      "brand": "nissan",
+      "model": "rogue",
+      "generation": "t32",
+      "name": "rogue 2.5",
+      "year": 2016,
+      "specs": {
+        "power_hp": {
+          "v": 170,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 233,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.7,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 7.8,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 176,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 93,
+      "brand": "ford",
+      "model": "focus",
+      "generation": "mk3",
+      "name": "focus 1.6 ecoboost",
+      "year": 2014,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 240,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.1,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 138,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 94,
+      "brand": "ford",
+      "model": "kuga",
+      "generation": "mk2",
+      "name": "kuga 2.0 tdci",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 150,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 370,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "manual",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 9.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.1,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 133,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 95,
+      "brand": "ford",
+      "model": "escape",
+      "generation": "mk3",
+      "name": "escape 2.0 ecoboost",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 240,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 366,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.8,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 9.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 203,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 96,
+      "brand": "bmw",
+      "model": "3-series",
+      "generation": "f30",
+      "name": "328i",
+      "year": 2013,
+      "specs": {
+        "power_hp": {
+          "v": 245,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 350,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 5.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 6.7,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 151,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 97,
+      "brand": "bmw",
+      "model": "5-series",
+      "generation": "g30",
+      "name": "520d",
+      "year": 2018,
+      "specs": {
+        "power_hp": {
+          "v": 190,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 400,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.5,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 4.8,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 125,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 98,
+      "brand": "mercedes-benz",
+      "model": "e-class",
+      "generation": "w212",
+      "name": "e 220 cdi",
+      "year": 2013,
+      "specs": {
+        "power_hp": {
+          "v": 170,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 400,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 8.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.4,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 140,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 99,
+      "brand": "audi",
+      "model": "a6",
+      "generation": "c7",
+      "name": "a6 2.0 tdi",
+      "year": 2015,
+      "specs": {
+        "power_hp": {
+          "v": 190,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 400,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "diesel",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.9,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 5.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 130,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  },
+  {
+    "data": {
+      "id": 100,
+      "brand": "audi",
+      "model": "q5",
+      "generation": "8r",
+      "name": "q5 2.0 tfsi",
+      "year": 2013,
+      "specs": {
+        "power_hp": {
+          "v": 225,
+          "u": "hp",
+          "label": "Power"
+        },
+        "torque_nm": {
+          "v": 350,
+          "u": "Nm",
+          "label": "Torque"
+        },
+        "fuel_type": {
+          "v": "petrol",
+          "label": "Fuel type"
+        },
+        "transmission": {
+          "v": "automatic",
+          "label": "Transmission"
+        },
+        "accel_0_100_s": {
+          "v": 7.2,
+          "u": "s",
+          "label": "0–100 km/h"
+        },
+        "cons_combined": {
+          "v": 8.0,
+          "u": "l/100km",
+          "label": "Consumption"
+        },
+        "co2_g_km": {
+          "v": 181,
+          "u": "g/km",
+          "label": "CO₂"
+        }
+      }
+    },
+    "meta": {
+      "locale": "en",
+      "units": "metric",
+      "last_synced": "2026-11-07"
+    }
+  }
+]

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AutoLog.Views.AddFuelRecordPage"
+             Title="Реєстрація заправки"
+             BackgroundColor="#1E2433">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="28,22" Spacing="20" MaximumWidthRequest="740" HorizontalOptions="Fill">
+
+            <!-- Верхній рядок: Кнопка Назад + Заголовок -->
+            <Grid ColumnDefinitions="Auto, *" ColumnSpacing="16" VerticalOptions="Center">
+                <Button Grid.Column="0"
+                        Text="‹  Назад"
+                        Clicked="OnBackClicked"
+                        BackgroundColor="#283147"
+                        TextColor="#E2E8F0"
+                        BorderColor="#3B4764"
+                        BorderWidth="1"
+                        FontAttributes="Bold"
+                        FontSize="13"
+                        HeightRequest="42"
+                        Padding="18,0"
+                        CornerRadius="12" />
+
+                <VerticalStackLayout Grid.Column="1" Spacing="2" VerticalOptions="Center">
+                    <Label Text="Реєстрація заправки або зарядки" FontSize="22" FontAttributes="Bold" TextColor="#F8FAFC" />
+                    <Label Text="Оберіть мережу АЗС для участі в рейтингу або введіть власну станцію" FontSize="13" TextColor="#94A3B8" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <!-- КАРТКА 1: ВИБІР МЕРЕЖІ АЗС -->
+            <Border BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="22">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="18" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="14">
+                    <Label Text="◈  ОБЕРІТЬ МЕРЕЖУ АЗС" FontSize="12" FontAttributes="Bold" TextColor="#60A5FA" CharacterSpacing="1" />
+
+                    <FlexLayout Wrap="Wrap" JustifyContent="Start" AlignItems="Center">
+                        <Button Text="UPG" Command="{Binding SelectStationCommand}" CommandParameter="UPG"
+                                BackgroundColor="{Binding UpgBg}" TextColor="White" FontAttributes="Bold"
+                                CornerRadius="10" HeightRequest="42" Padding="20,0" Margin="0,0,10,8" />
+
+                        <Button Text="OKKO" Command="{Binding SelectStationCommand}" CommandParameter="OKKO"
+                                BackgroundColor="{Binding OkkoBg}" TextColor="White" FontAttributes="Bold"
+                                CornerRadius="10" HeightRequest="42" Padding="20,0" Margin="0,0,10,8" />
+
+                        <Button Text="WOG" Command="{Binding SelectStationCommand}" CommandParameter="WOG"
+                                BackgroundColor="{Binding WogBg}" TextColor="White" FontAttributes="Bold"
+                                CornerRadius="10" HeightRequest="42" Padding="20,0" Margin="0,0,10,8" />
+
+                        <Button Text="Укрнафта" Command="{Binding SelectStationCommand}" CommandParameter="Укрнафта"
+                                BackgroundColor="{Binding UkrnaftaBg}" TextColor="White" FontAttributes="Bold"
+                                CornerRadius="10" HeightRequest="42" Padding="20,0" Margin="0,0,10,8" />
+
+                        <Button Text="＋ Своя АЗС" Command="{Binding SelectStationCommand}" CommandParameter="Своя АЗС"
+                                BackgroundColor="{Binding CustomBg}" TextColor="White" FontAttributes="Bold"
+                                CornerRadius="10" HeightRequest="42" Padding="18,0" Margin="0,0,10,8" />
+                    </FlexLayout>
+
+                    <!-- Поле для ручного вводу з'являється ТІЛЬКИ якщо обрано "Своя АЗС" -->
+                    <VerticalStackLayout Spacing="6" IsVisible="{Binding IsCustomStation}">
+                        <Label Text="Введіть назву вашої АЗС або зарядної станції" FontSize="13" FontAttributes="Bold" TextColor="#CBD5E1" />
+                        <Border BackgroundColor="#313B54" Stroke="#8B5CF6" StrokeThickness="1" Padding="12,4">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10" />
+                            </Border.StrokeShape>
+                            <Entry Placeholder="Напр., БРСМ, KLO, Socar, YASNO..." Text="{Binding CustomStationName}" TextColor="White" PlaceholderColor="#94A3B8" BackgroundColor="Transparent" />
+                        </Border>
+                        <Label Text="✦ Для користувацьких станцій оцінювання недоступне, оскільки вони не входять до загального рейтингу мереж." FontSize="12" TextColor="#94A3B8" />
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- КАРТКА 2: ПАРАМЕТРИ ТРАНЗАКЦІЇ -->
+            <Border BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="22">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="18" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="16">
+                    <Label Text="◈  ДАНІ З ЧЕКА ТА ОДОМЕТРА" FontSize="12" FontAttributes="Bold" TextColor="#34D399" CharacterSpacing="1" />
+
+                    <Grid ColumnDefinitions="*, *, *" ColumnSpacing="14">
+                        <VerticalStackLayout Grid.Column="0" Spacing="6">
+                            <Label Text="Поточний пробіг" FontSize="13" FontAttributes="Bold" TextColor="#CBD5E1" />
+                            <Border BackgroundColor="#313B54" Stroke="#475577" StrokeThickness="1" Padding="12,4">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="10" />
+                                </Border.StrokeShape>
+                                <Entry Placeholder="102400" Text="{Binding OdometerText}" Keyboard="Numeric" TextColor="White" PlaceholderColor="#94A3B8" BackgroundColor="Transparent" />
+                            </Border>
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Grid.Column="1" Spacing="6">
+                            <Label Text="Об'єм (л / кВт·год)" FontSize="13" FontAttributes="Bold" TextColor="#CBD5E1" />
+                            <Border BackgroundColor="#313B54" Stroke="#475577" StrokeThickness="1" Padding="12,4">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="10" />
+                                </Border.StrokeShape>
+                                <Entry Placeholder="40" Text="{Binding QuantityText}" Keyboard="Numeric" TextColor="White" PlaceholderColor="#94A3B8" BackgroundColor="Transparent" />
+                            </Border>
+                        </VerticalStackLayout>
+
+                        <VerticalStackLayout Grid.Column="2" Spacing="6">
+                            <Label Text="Ціна за одиницю (грн)" FontSize="13" FontAttributes="Bold" TextColor="#CBD5E1" />
+                            <Border BackgroundColor="#313B54" Stroke="#475577" StrokeThickness="1" Padding="12,4">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="10" />
+                                </Border.StrokeShape>
+                                <Entry Placeholder="56.99" Text="{Binding PricePerUnitText}" Keyboard="Numeric" TextColor="White" PlaceholderColor="#94A3B8" BackgroundColor="Transparent" />
+                            </Border>
+                        </VerticalStackLayout>
+                    </Grid>
+
+                    <Border BackgroundColor="#313B54" Stroke="#475577" StrokeThickness="1" Padding="16,12">
+                        <Border.StrokeShape>
+                            <RoundRectangle CornerRadius="12" />
+                        </Border.StrokeShape>
+                        <Grid ColumnDefinitions="*, Auto">
+                            <VerticalStackLayout Grid.Column="0" Spacing="2" VerticalOptions="Center">
+                                <Label Text="Заправка до повного бака / 100% заряду" FontSize="14" FontAttributes="Bold" TextColor="White" />
+                                <Label Text="Необхідно для автоматичного розрахунку фактичної витрати на 100 км" FontSize="12" TextColor="#94A3B8" />
+                            </VerticalStackLayout>
+                            <Switch Grid.Column="1" IsToggled="{Binding IsFullFill}" OnColor="#3B82F6" VerticalOptions="Center" />
+                        </Grid>
+                    </Border>
+                </VerticalStackLayout>
+            </Border>
+
+            <!-- КАРТКА 3: ОЦІНКА ЯКОСТІ (Автоматично ховається для "Своя АЗС"!) -->
+            <Border BackgroundColor="#283147" Stroke="#3B4764" StrokeThickness="1" Padding="22"
+                    IsVisible="{Binding CanRateStation}">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="18" />
+                </Border.StrokeShape>
+                <VerticalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Label Text="✦  ОЦІНІТЬ ЯКІСТЬ ПАЛЬНОГО НА ЦІЙ МЕРЕЖІ АЗС" FontSize="12" FontAttributes="Bold" TextColor="#FBBF24" CharacterSpacing="1" HorizontalOptions="Center" />
+
+                    <HorizontalStackLayout Spacing="12" HorizontalOptions="Center">
+                        <Button Text="{Binding Star1}" Command="{Binding SetRatingCommand}" CommandParameter="1" FontSize="30" TextColor="#FBBF24" BackgroundColor="#313B54" WidthRequest="52" HeightRequest="52" CornerRadius="12" Padding="0" />
+                        <Button Text="{Binding Star2}" Command="{Binding SetRatingCommand}" CommandParameter="2" FontSize="30" TextColor="#FBBF24" BackgroundColor="#313B54" WidthRequest="52" HeightRequest="52" CornerRadius="12" Padding="0" />
+                        <Button Text="{Binding Star3}" Command="{Binding SetRatingCommand}" CommandParameter="3" FontSize="30" TextColor="#FBBF24" BackgroundColor="#313B54" WidthRequest="52" HeightRequest="52" CornerRadius="12" Padding="0" />
+                        <Button Text="{Binding Star4}" Command="{Binding SetRatingCommand}" CommandParameter="4" FontSize="30" TextColor="#FBBF24" BackgroundColor="#313B54" WidthRequest="52" HeightRequest="52" CornerRadius="12" Padding="0" />
+                        <Button Text="{Binding Star5}" Command="{Binding SetRatingCommand}" CommandParameter="5" FontSize="30" TextColor="#FBBF24" BackgroundColor="#313B54" WidthRequest="52" HeightRequest="52" CornerRadius="12" Padding="0" />
+                    </HorizontalStackLayout>
+
+                    <Label Text="{Binding RatingDescription}" FontSize="13" FontAttributes="Bold" TextColor="#FDE68A" HorizontalOptions="Center" Margin="0,4,0,0" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Button Text="Зберегти запис в історію"
+                    Command="{Binding SaveCommand}"
+                    BackgroundColor="#3B82F6"
+                    TextColor="White"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    HeightRequest="52"
+                    CornerRadius="14" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
